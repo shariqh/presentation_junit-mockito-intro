@@ -1,0 +1,105 @@
+<!doctype html>                            
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Testing with JUnit and Mockito</h2>
+						<small>I'm not mocking you... 🤯</small>
+					</section>
+					<section>	
+						<h3>Remember the testing pyramid?</h3>
+						<img data-src="https://d2h1nbmw1jjnl.cloudfront.net/ckeditor/pictures/data/000/000/158/content/typical_pyramid-1024x938.jpg" width="500">
+						<br>
+						Where do JUnit and Mockito fit into it?
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>JUnit</h2>
+						Per the name, you can attribute JUnit to unit testing
+						<small>JUnit is a unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit. JUnit is linked as a JAR at compile-time</small>
+					</section>
+					<section>
+						Two versions are largely in circulation
+						<br>
+						<br>
+						JUnit 4
+						<br>
+						&
+						<br>
+						<img data-src="https://junit.org/junit4/images/junit5-banner.png" width="500">
+					</section>
+					<section>
+						<small>Other than an actual logo...</small>
+						<br>
+						What are the (dis)advantages of each version?
+						<br>
+						<br>
+						<div style="display: flex; flex-direction: row; justify-content: space-around;">
+							<h4>JUnit 4</h4>
+							<h4>JUnit 5</h4>
+						</div>
+						<div style="display: flex; flex-direction: row; justify-content: space-around;">
+							<ol>
+								<li>Widely used</li>
+								<li>Built up to Java 7</li>
+								<li>Single library</li>
+							</ol>
+							<ol>
+								<li>Granularity in imports</li>
+								<li>Leverages Java 8</li>
+								<li>More complicated</li>
+								<li>New & shiny</li>
+							</ol>
+						</div>
+						<br>
+						We'll utilize JUnit 5
+					</section>
+				</section>
+				<section>
+					<section>
+						So that leaves us with...
+						<h2>Mockito</h2>
+						<small>Mockito is an open source testing framework for Java released under the MIT License. The framework allows the creation of test double objects in automated unit tests for the purpose of test-driven development or behavior-driven development. The framework's name and logo are a play on mojitos, a type of drink.</small>
+					</section>
+					<section>
+						We'll do it live
+						<br>
+						<img data-src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
